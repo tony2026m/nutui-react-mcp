@@ -246,12 +246,6 @@
         "whenToUse": ""
     },
     {
-        "name": "快速上手",
-        "dirName": "start",
-        "description": "",
-        "whenToUse": ""
-    },
-    {
         "name": "Tabbar 标签栏",
         "dirName": "tabbar",
         "description": "底部导航常用场景",
@@ -366,12 +360,6 @@
         "whenToUse": ""
     },
     {
-        "name": "主题定制",
-        "dirName": "theme",
-        "description": "",
-        "whenToUse": ""
-    },
-    {
         "name": "Table组件",
         "dirName": "table",
         "description": "用于展示基础表格",
@@ -468,12 +456,6 @@
         "whenToUse": ""
     },
     {
-        "name": "官方主题",
-        "dirName": "officialtheme",
-        "description": "",
-        "whenToUse": ""
-    },
-    {
         "name": "Elevator 电梯楼层",
         "dirName": "elevator",
         "description": "用于列表快速定位以及索引的显示",
@@ -519,12 +501,6 @@
         "name": "NumberKeyboard 数字键盘",
         "dirName": "numberkeyboard",
         "description": "虚拟数字键盘，用于输入支付密码的场景。",
-        "whenToUse": ""
-    },
-    {
-        "name": "国际化",
-        "dirName": "international",
-        "description": "NutUI-React 1.0 以上版本支持多语言。组件默认使用中文。",
         "whenToUse": ""
     },
     {
