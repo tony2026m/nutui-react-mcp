@@ -1,0 +1,92 @@
+# BackTop 返回顶部
+
+提供较长的页面快捷返回顶部功能。
+
+## 引入
+
+```tsx
+import { BackTop } from '@nutui/nutui-react-taro'
+```
+
+## 示例代码
+
+### 基础用法
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /backtop/demos/taro/demo1.tsx
+	- thumbnail: 
+
+:::
+
+### 设置出现位置
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /backtop/demos/taro/demo2.tsx
+	- thumbnail: 
+
+:::
+
+### 自定义样式
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /backtop/demos/taro/demo3.tsx
+	- thumbnail: 
+
+:::
+
+### click事件
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /backtop/demos/taro/demo4.tsx
+	- thumbnail: 
+
+:::
+
+### 鸿蒙端使用
+
+由于不支持 fixed 定位，需配合 ScrollView 进行使用。
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /backtop/demos/taro/demo5.tsx
+	- thumbnail: 
+
+:::
+
+## BackTop
+
+### Props
+
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| threshold | 页面垂直滚动多高后出现 | `number` | `200` |
+| zIndex | 设置组件页面层级 | `number` | `900` |
+| duration | 设置动画持续时间，为 0 时表示无动画 | `number` | `1000` |
+| scrollRes | 被监听容器滚动时的回调参数 | `PageScrollObejct` | `-` |
+| onClick | 按钮点击时触发事件 | `(event: MouseEvent<HTMLDivElement>) => void` | `-` |
+
+## 主题定制
+
+### 样式变量
+
+组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](#/zh-CN/component/configprovider)。
+
+| 名称 | 说明 | 默认值 |
+| --- | --- | --- |
+| \--nutui-backtop-border-color | 边框颜色 | `#e0e0e0` |
+
+<Contribution name="BackTop" />

@@ -1,0 +1,163 @@
+# Grid 宫格
+
+用于分隔成等宽区块进行页面导航。
+
+## 引入
+
+```tsx
+import { Grid } from '@nutui/nutui-react-taro'
+```
+
+## 示例代码
+
+### 基础用法
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /grid/demos/taro/demo1.tsx
+	- thumbnail: 
+
+:::
+
+### 自定义列数
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /grid/demos/taro/demo2.tsx
+	- thumbnail: 
+
+:::
+
+### 自定义格子
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /grid/demos/taro/demo3.tsx
+	- thumbnail: 
+
+:::
+
+### 格子间距
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /grid/demos/taro/demo4.tsx
+	- thumbnail: 
+
+:::
+
+### 内容翻转
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /grid/demos/taro/demo5.tsx
+	- thumbnail: 
+
+:::
+
+### 内容横向
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /grid/demos/taro/demo6.tsx
+	- thumbnail: 
+
+:::
+
+### 内容翻转 + 横向
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /grid/demos/taro/demo7.tsx
+	- thumbnail: 
+
+:::
+
+### 图标颜色/大小
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /grid/demos/taro/demo8.tsx
+	- thumbnail: 
+
+:::
+
+### 自定义内容
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /grid/demos/taro/demo9.tsx
+	- thumbnail: 
+
+:::
+
+### 点击子项事件
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /grid/demos/taro/demo10.tsx
+	- thumbnail: 
+
+:::
+
+## Grid
+
+### Props
+
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| columns | 列数 | `number` \| `string` | `4` |
+| gap | 格子之间的间距，默认单位为`px` | `number` \| `string` | `9` |
+| center | 是否将格子内容居中显示 | `boolean` | `true` |
+| square | 是否将格子固定为正方形 | `boolean` | `true` |
+| reverse | 内容翻转 | `boolean` | `false` |
+| direction | 格子内容排列的方向 | `horizontal` \| `vertical` | `vertical` |
+| onClick | 宫格子项点击事件 | `(index) => void` | `-` |
+
+## Grid.Item
+
+### Props
+
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| text | 文字 | `string` \| `ReactNode` | `-` |
+| onClick | 点击格子时触发 | `(event: Event) => void` | `-` |
+
+## 主题定制
+
+### 样式变量
+
+组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](#/zh-CN/component/configprovider)。
+
+| 名称 | 说明 | 默认值 |
+| --- | --- | --- |
+| \--nutui-grid-border-width | 边框宽度 | `0` |
+| \--nutui-grid-border-color | 边框颜色 | `$color-border` |
+| \--nutui-grid-border-radius | 边框圆角大小 | `$radius-l` |
+| \--nutui-grid-item-content-padding | 内边距 | `16px 8px` |
+| \--nutui-grid-item-content-bg-color | 背景 | `$white` |
+| \--nutui-grid-item-text-margin | 外边距 | `8px` |
+| \--nutui-grid-item-text-color | 文字颜色 | `$color-title` |
+| \--nutui-grid-item-text-font-size | 文字字体大小 | `$font-size-s` |
+
+<Contribution name="Grid" />

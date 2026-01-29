@@ -1,0 +1,88 @@
+import React, { useMemo, useState } from 'react'
+import { View, Text } from '@tarojs/components'
+import { Range, Cell, harmony, pxTransform } from '@nutui/nutui-react-taro'
+
+const Demo11 = () => {
+  const cellStyle = useMemo(() => {
+    return harmony()
+      ? {
+          paddingTop: pxTransform(40),
+          paddingBottom: pxTransform(40),
+          paddingLeft: pxTransform(18),
+          paddingRight: pxTransform(18),
+        }
+      : {
+          padding: '40px 18px',
+        }
+  }, [])
+
+  const buttonNativeStyle = useMemo(() => {
+    return {}
+  }, [])
+  const [value, setValue] = useState(60)
+  const [show, setShow] = useState(false)
+  const [msg, setMsg] = useState('')
+  const showToast = (msg: string) => {
+    setMsg(msg)
+    setShow(true)
+  }
+  return (
+    <View>
+      <Cell style={cellStyle}>
+        <Range
+          value={value}
+          button={
+            <View
+              style={{
+                position: 'absolute',
+                display: 'flex',
+                width: pxTransform(26),
+                backgroundColor: 'red',
+                borderRadius: pxTransform(10),
+                justifyContent: 'center',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                ...buttonNativeStyle,
+              }}
+            >
+              <Text
+                style={
+                  harmony()
+                    ? {
+                        height: pxTransform(18),
+                        color: 'white',
+                        fontSize: pxTransform(10),
+                        lineHeight: 1,
+                        textAlign: 'center',
+                        paddingTop: pxTransform(4),
+                        paddingBottom: pxTransform(4),
+                      }
+                    : {
+                        color: 'white',
+                        fontSize: pxTransform(10),
+                        lineHeight: pxTransform(18),
+                        textAlign: 'center',
+                      }
+                }
+              >
+                {value}
+              </Text>
+            </View>
+          }
+          onChange={(val: any) => setValue(val)}
+          onEnd={(val) => showToast(`${val}`)}
+        />
+      </Cell>
+      {/* <Toast
+        type="text"
+        visible={show}
+        content={msg}
+        onClose={() => {
+          setShow(false)
+        }}
+      /> */}
+    </View>
+  )
+}
+export default Demo11

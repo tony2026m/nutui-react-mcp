@@ -1,0 +1,179 @@
+# CountDown 倒计时
+
+用于实时展示倒计时数值，支持毫秒精度。
+
+## 引入
+
+```tsx
+import { CountDown } from '@nutui/nutui-react'
+```
+
+## 示例代码
+
+### 基础用法
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /countdown/demos/h5/demo1.tsx
+	- thumbnail: 
+
+:::
+
+### 剩余时间用法
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /countdown/demos/h5/demo2.tsx
+	- thumbnail: 
+
+:::
+
+### 自定义格式
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /countdown/demos/h5/demo3.tsx
+	- thumbnail: 
+
+:::
+
+### 毫秒级渲染
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /countdown/demos/h5/demo4.tsx
+	- thumbnail: 
+
+:::
+
+### 以服务端的时间为准
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /countdown/demos/h5/demo5.tsx
+	- thumbnail: 
+
+:::
+
+### 异步更新结束时间
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /countdown/demos/h5/demo6.tsx
+	- thumbnail: 
+
+:::
+
+### 控制开始和暂停的倒计时
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /countdown/demos/h5/demo7.tsx
+	- thumbnail: 
+
+:::
+
+### 自定义展示
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /countdown/demos/h5/demo8.tsx
+	- thumbnail: 
+
+:::
+
+### 手动控制
+
+通过 ref 获取到组件实例后，可以调用 start、pause、reset 方法。在使用手动控制时，通过 time 属性实现倒计时总时长，单位为毫秒。startTime、endTime 属性失效。
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /countdown/demos/h5/demo9.tsx
+	- thumbnail: 
+
+:::
+
+## CountDown
+
+### Props
+
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| type | 展示类型 | `default`\|`primary`\|`text` | `default` |
+| startTime | 开始时间 | `number` | `Date.now()` |
+| endTime | 结束时间 | `number` | `Date.now()` |
+| remainingTime | 剩余时间，单位是毫秒 | `number` | `0` |
+| paused | 是否暂停 | `boolean` | `false` |
+| format | 时间格式 | `string` | `HH:mm:ss` |
+| millisecond | 是否开启毫秒级渲染 | `boolean` | `false` |
+| autoStart | 是否自动开始倒计时 | `boolean` | `true` |
+| time | 倒计时显示时间，单位是毫秒。autoStart 为 false 时生效 | `number` | `0` |
+| destroy | 销毁实例 | `boolean` | `false` |
+| onEnd | 倒计时结束时回调函数 | `无` | `-` |
+| onPaused | 暂停倒计时回调函数 | `onPaused: (restTime: number) => void` | `-` |
+| onRestart | 重新开始倒计时回调函数 | `onRestart: (restTime: number) => void` | `-` |
+| onUpdate | 自定义展示内容时，实时更新倒计时数据回调函数 | `onUpdate: (restTime: any) => void` | `-` |
+
+### format 格式
+
+| 格式 | 说明 |
+| --- | --- |
+| DD | 天数 |
+| HH | 小时 |
+| mm | 分钟 |
+| ss | 秒数 |
+| S | 毫秒（1位） |
+| SS | 毫秒（2位） |
+| SSS | 毫秒（3位） |
+
+### Ref
+
+| 属性 | 说明 | 类型 |
+| --- | --- | --- |
+| start | 开始倒计时 | `() => void` |
+| pause | 暂停倒计时 | `() => void` |
+| reset | 重设倒计时，若 auto-start 为 true，重设后会自动开始倒计时 | `() => void` |
+
+## 主题定制
+
+### 样式变量
+
+组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](#/zh-CN/component/configprovider)。
+
+| 名称 | 说明 | 默认值 |
+| --- | --- | --- |
+| \--nutui-countdown-display | 倒计时的布局方式 | `flex` |
+| \--nutui-countdown-color | 倒计时的文字颜色 | `$color-primary` |
+| \--nutui-countdown-font-size | 倒计时的字体大小 | `11px` |
+| \--nutui-countdown-font-weight | 倒计时的字体粗细 | `400` |
+| \--nutui-countdown-width | 倒计时的时间区域宽度 | `16px` |
+| \--nutui-countdown-height | 倒计时的时间区域高度 | `16px` |
+| \--nutui-countdown-number-padding | 倒计时的时间区域padding | `0 0` |
+| \--nutui-countdown-number-margin | 倒计时的时间区域margin | `0 1px` |
+| \--nutui-countdown-number-border-radius | 倒计时的时间区域圆角大小 | `2px` |
+| \--nutui-countdown-number-color | 倒计时的时间区域的文字颜色 | `$color-primary` |
+| \--nutui-countdown-background-color | 倒计时的时间区域的背景颜色 | `$color-background-overlay` |
+| \--nutui-countdown-border-color | 倒计时的时间区域的边框颜色颜色 | `$color-primary-light-pressed` |
+| \--nutui-countdown-number-primary-color | type为`primary`时，倒计时的时间区域的文字颜色 | `$color-primary-text` |
+| \--nutui-countdown-primary-background-color | type为`primary`时，倒计时的时间区域的背景颜色 | `$color-primary` |
+| \--nutui-countdown-primary-border-color | type为`primary`时，倒计时的时间区域的边框颜色颜色 | `$color-primary` |
+
+<Contribution name="CountDown" />

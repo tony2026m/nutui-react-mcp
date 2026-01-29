@@ -1,0 +1,151 @@
+# Progress 进度条
+
+展示操作或任务的当前进度。
+
+## 引入
+
+```tsx
+import { Progress } from '@nutui/nutui-react-taro'
+```
+
+## 示例代码
+
+### 基础用法
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /progress/demos/taro/demo1.tsx
+	- thumbnail: 
+
+:::
+
+### 设置颜色与宽度
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /progress/demos/taro/demo2.tsx
+	- thumbnail: 
+
+:::
+
+### 显示百分比
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /progress/demos/taro/demo3.tsx
+	- thumbnail: 
+
+:::
+
+### 自定义显示内容
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /progress/demos/taro/demo4.tsx
+	- thumbnail: 
+
+:::
+
+### 自定义尺寸
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /progress/demos/taro/demo5.tsx
+	- thumbnail: 
+
+:::
+
+### 状态显示
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /progress/demos/taro/demo6.tsx
+	- thumbnail: 
+
+:::
+
+### 动态改变
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /progress/demos/taro/demo7.tsx
+	- thumbnail: 
+
+:::
+
+### 延迟加载数据
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /progress/demos/taro/demo8.tsx
+	- thumbnail: 
+
+:::
+
+### 设置动画时长与播放方式
+
+:::demo
+- [外部示例代码]
+	- description: 
+	- src: /progress/demos/taro/demo9.tsx
+	- thumbnail: 
+:::
+
+## Progress
+
+### Props
+
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| percent | 百分比 | `number` | `0` |
+| color | 进度条线条颜色 | `string` | `linear-gradient(135deg, #FF0F23 0%, #fa6419 100%)` |
+| background | 进度条背景颜色 | `string` | `#f3f3f3` |
+| strokeWidth | 进度条宽度 | `string` | `-` |
+| showText | 是否显示文字内容 | `boolean` | `false` |
+| animated | 是否展示动画效果 | `boolean` | `false` |
+| lazy | 每次进入可视区展示进度条动画 | `boolean` | `false` |
+| delay | 延迟数据加载时长，单位 ms | `number` | `0` |
+| borderRadius | 进度条圆角大小 | `string` | `0` |
+| fontSize | 进度文字大小 | `string` | `12px` |
+| activeMode | 动画播放方式 | `forwards \| backwards` | `forwards` |
+| duration | 动画完成时间（单位：毫秒） | `number` | `30` |
+| ariaLabel | 无障碍标签 | `string` | `-` |
+| onActiveEnd | 动画完成后的回调函数 | `() => void` | `-` |
+
+## 主题定制
+
+### 样式变量
+
+组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](#/zh-CN/component/configprovider)。
+
+| 名称 | 说明 | 默认值 |
+| --- | --- | --- |
+| \--nutui-progress-height | 进度条宽度 | `10px` |
+| \--nutui-progress-border-radius | 进度条边框圆角 | `12px` |
+| \--nutui-progress-color | 进度条颜色 | `linear-gradient(135deg, #FF0F23 0%, #fa6419 100%)` |
+| \--nutui-progress-background | 进度条背景色 | `#f3f3f3` |
+| \--nutui-progress-text-color | 文本颜色 | `$color-text-help` |
+| \--nutui-progress-text-padding | 文本内边距 | `0 5px` |
+| \--nutui-progress-text-font-size | 文本字体大小 | `13px` |
+| \--nutui-progress-text-position-top | 文本定位 top | `-4px` |
+| \--nutui-progress-text-position-bottom | 文本定位 bottom | `-4px` |
+| \--nutui-progress-text-border-radius | 文本边框圆角 | `5px` |
+| \--nutui-progress-text-background | 文本背景颜色 | `$progress-color` |
+
+<Contribution name="Progress" />

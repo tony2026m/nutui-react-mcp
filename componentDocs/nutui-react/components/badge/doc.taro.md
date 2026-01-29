@@ -1,0 +1,155 @@
+# Badge 徽标
+
+出现在图标或文字右上角的红色圆点、数字或者文字，表示有新内容或者待处理的信息。
+
+## 引入
+
+```tsx
+import { Badge } from '@nutui/nutui-react-taro'
+```
+
+## 示例代码
+
+### 基础用法
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /badge/demos/taro/demo1.tsx
+	- thumbnail: 
+
+:::
+
+### 禁用
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /badge/demos/taro/demo9.tsx
+	- thumbnail: 
+
+:::
+
+### 最大值
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /badge/demos/taro/demo2.tsx
+	- thumbnail: 
+
+:::
+
+### 自定义颜色
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /badge/demos/taro/demo3.tsx
+	- thumbnail: 
+
+:::
+
+### 自定义徽标内容
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /badge/demos/taro/demo4.tsx
+	- thumbnail: 
+
+:::
+
+### 自定义徽标样式
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /badge/demos/taro/demo5.tsx
+	- thumbnail: 
+
+:::
+
+### 自定义位置
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /badge/demos/taro/demo6.tsx
+	- thumbnail: 
+
+:::
+
+### 独立展示
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /badge/demos/taro/demo7.tsx
+	- thumbnail: 
+
+:::
+
+### 填充模式
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /badge/demos/taro/demo8.tsx
+	- thumbnail: 
+
+:::
+
+## Badge
+
+### Props
+
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| value | 显示的内容，支持数字、字符和自定义内容 | `ReactNode` | `-` |
+| max | value 为数值时，最大值 | `number` | `99` |
+| dot | 是否为小点，当`value`值为自定义内容时，dot不生效 | `boolean` | `false` |
+| size | dot 尺寸，当 dot 等于 `true` 时生效 | `small` \| `normal` \| `large` | `large` |
+| top | 上下偏移量，可设置为："0"或0 等 | `string` \| `number` | `"0"` |
+| right | 左右偏移量，可设置为："0"或0 等 | `string` \| `number` | `"0"` |
+| fill | 填充模式 | `solid` \| `outline` | `solid` |
+| disabled | 是否禁用 | `boolean` | `false` |
+
+## 主题定制
+
+### 样式变量
+
+组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](#/zh-CN/component/configprovider)。
+
+| 名称 | 说明 | 默认值 |
+| --- | --- | --- |
+| \--nutui-badge-height | badge 的高度 | `14px` |
+| \--nutui-badge-background-color | badge 背景色 | `$color-primary` |
+| \--nutui-badge-background-disabled-color | badge 禁用背景色 | `$color-text-disabled` |
+| \--nutui-badge-color | badge 内容色值 | `$color-primary-text` |
+| \--nutui-badge-font-size | badge 内容字号 | `$font-size-xxs` |
+| \--nutui-badge-border | badge 边框 | `1px solid $color-primary-text` |
+| \--nutui-badge-border-radius | badge 边框圆角 | `14px` |
+| \--nutui-badge-min-width | badge 最小宽度 | `6px` |
+| \--nutui-badge-padding | badge 的padding值 | `1px 4px` |
+| \--nutui-badge-icon-padding | badge 为自定义icon时 的 padding值 | `2px` |
+| \--nutui-badge-icon-size | badge 为自定义icon时 的 size | `10px` |
+| \--nutui-badge-content-transform | badge 内容位置 | `translate(50%, -50%)` |
+| \--nutui-badge-z-index | badge 自定义icon时的z-index | `1` |
+| \--nutui-badge-dot-width | badge 为圆点时，size 等于 normal 的宽高 | `6px` |
+| \--nutui-badge-dot-small-width | badge 为圆点时，size 等于 small 的宽高 | `4px` |
+| \--nutui-badge-dot-large-width | badge 为圆点时，size 等于 large 的宽高 | `8px` |
+| \--nutui-badge-dot-border | badge 为圆点时的边框 | `1px solid $color-primary-text` |
+| \--nutui-badge-outline-color | badge 为 outline 文字色值 | `$color-primary` |
+| \--nutui-badge-outline-border | badge 为 outline 填充模式时的边框 | `1px solid $color-primary-text` |
+
+<Contribution name="Badge" />

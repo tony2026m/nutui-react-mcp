@@ -1,0 +1,15 @@
+{
+  "script": {
+    "doc_root": {
+      "nutui": "../.temp/nutui-react/src/"
+    }
+  },
+  "py": {
+
+  },
+  "js": {
+    "doc_root": {
+      "nutui": "../componentDocs/nutui-react/"
+    }
+  }
+}

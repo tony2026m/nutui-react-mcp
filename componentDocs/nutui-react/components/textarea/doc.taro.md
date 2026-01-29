@@ -1,0 +1,145 @@
+# TextArea 文本域
+
+文本框内输入或编辑文字，支持限制输入数量。
+
+## 引入
+
+```tsx
+import { TextArea } from '@nutui/nutui-react-taro'
+```
+
+## 示例代码
+
+### 基础用法
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /textarea/demos/taro/demo1.tsx
+	- thumbnail: 
+
+:::
+
+### 受控方式
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /textarea/demos/taro/demo2.tsx
+	- thumbnail: 
+
+:::
+
+### 显示字数统计
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /textarea/demos/taro/demo3.tsx
+	- thumbnail: 
+
+:::
+
+### 自定义行数，设置自动高度
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /textarea/demos/taro/demo4.tsx
+	- thumbnail: 
+
+:::
+
+### 自定义字数统计样式
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /textarea/demos/taro/demo5.tsx
+	- thumbnail: 
+
+:::
+
+### 只读
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /textarea/demos/taro/demo6.tsx
+	- thumbnail: 
+
+:::
+
+### 禁用
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /textarea/demos/taro/demo7.tsx
+	- thumbnail: 
+
+:::
+
+### 文本位置
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /textarea/demos/taro/demo8.tsx
+	- thumbnail: 
+
+:::
+
+## TextArea
+
+### Props
+
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| value | 输入框内容，受控 | `string` | `-` |
+| defaultValue | 初始默认值，非受控 | `string` | `-` |
+| placeholder | 设置占位提示文字 | `string` | `请输入内容` |
+| maxLength | 限制最长输入字符，-1 表示无限制 | `number` | `140` |
+| rows | textarea 的行数（仅支持H5） | `number` | `2` |
+| showCount | textarea 是否展示输入字符。须配合`maxLength`使用 | `boolean` | `false` |
+| autoSize | 高度是否可拉伸 | `boolean` | `false` |
+| readOnly | 只读属性 | `boolean` | `false` |
+| disabled | 禁用属性 | `boolean` | `false` |
+| plain | 标记文本域的容器类型，false 为容器型 `container`, true 为 `纯文本型` | `boolean` | `false` |
+| status | 文本域状态，可标记为 默认状态 和 错误状态 | `default /\ error` | `default` |
+| onChange | 输入内容时触发 | `(value) => void` | `-` |
+| onFocus | 聚焦时触发 | `(event) => void` | `-` |
+| onBlur | 失焦时触发 | `(event) => void` | `-` |
+
+### Ref
+
+通过 ref 可以获取到 Textarea 实例并调用实例方法。
+
+| 方法名 | 说明 | 参数 |
+| --- | --- | --- |
+| clear | 清除容器中的数据 | `-` |
+| focus | 使容器获取焦点 | `-` |
+| blur | 使容器失去焦点 | `-` |
+| nativeElement | 获取当前容器 | `-` |
+
+## 主题定制
+
+### 样式变量
+
+组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](#/zh-CN/component/configprovider)。
+
+| 名称 | 说明 | 默认值 |
+| --- | --- | --- |
+| \--nutui-textarea-padding | 内边距 | `10px 25px` |
+| \--nutui-textarea-text-color | 文本颜色 | `$color-title` |
+| \--nutui-textarea-text-curror-color | 光标颜色 | `$color-title` |
+
+<Contribution name="TextArea" />

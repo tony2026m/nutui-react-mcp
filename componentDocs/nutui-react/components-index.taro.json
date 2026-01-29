@@ -1,0 +1,578 @@
+[
+    {
+        "name": "Uploader 上传",
+        "dirName": "uploader",
+        "description": "用于将本地的图片或文件上传至服务器。",
+        "whenToUse": ""
+    },
+    {
+        "name": "SearchBar组件",
+        "dirName": "searchbar",
+        "description": "用于搜索场景的输入框组件。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Tabs 选项卡切换",
+        "dirName": "tabs",
+        "description": "常用于平级区域大块内容的的收纳和展现，支持内嵌标签形式和渲染循环数据形式",
+        "whenToUse": ""
+    },
+    {
+        "name": "SideBar组件",
+        "dirName": "sidebar",
+        "description": "用于侧边内容选择和切换",
+        "whenToUse": ""
+    },
+    {
+        "name": "Rate 评分",
+        "dirName": "rate",
+        "description": "用于快速的评级操作，或对评价进行展示。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Notify 消息通知",
+        "dirName": "notify",
+        "description": "在页面顶部展示消息提示",
+        "whenToUse": ""
+    },
+    {
+        "name": "Navbar 头部导航",
+        "dirName": "navbar",
+        "description": "提供导航功能。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Pagination 分页",
+        "dirName": "pagination",
+        "description": "当数据量较多时，采用分页的形式分隔长列表。",
+        "whenToUse": ""
+    },
+    {
+        "name": "CircleProgress 进度条",
+        "dirName": "circleprogress",
+        "description": "展示操作或任务的当前进度。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Animate 动画/动效",
+        "dirName": "animate",
+        "description": "给子元素添加动画效果",
+        "whenToUse": ""
+    },
+    {
+        "name": "Popup 弹出层",
+        "dirName": "popup",
+        "description": "弹出层容器，用于展示弹窗、信息提示等内容",
+        "whenToUse": ""
+    },
+    {
+        "name": "Video 视频播放器",
+        "dirName": "video",
+        "description": "借助 Taro Video 标签实现的视频播放器，可以透传使用 Taro Video 的属性。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Form 表单",
+        "dirName": "form",
+        "description": "用于数据录入、校验，支持输入框、单选框、复选框等类型。",
+        "whenToUse": ""
+    },
+    {
+        "name": "ConfigProvider 全局配置",
+        "dirName": "configprovider",
+        "description": "用于全局配置 NutUI-React 组件，提供主题定制，国际化支持。",
+        "whenToUse": ""
+    },
+    {
+        "name": "ActionSheet 动作面板",
+        "dirName": "actionsheet",
+        "description": "从底部弹出的动作菜单面板。",
+        "whenToUse": ""
+    },
+    {
+        "name": "ShortPassword 短密码",
+        "dirName": "shortpassword",
+        "description": "短密码输入框，可用于输入密码、短信验证码等",
+        "whenToUse": ""
+    },
+    {
+        "name": "Swiper 轮播",
+        "dirName": "swiper",
+        "description": "常用于一组图片或卡片轮播，当内容空间不足时，可以用走马灯的形式进行收纳，进行轮播展现。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Calendar 日历",
+        "dirName": "calendar",
+        "description": "日历，可平铺/弹窗展示",
+        "whenToUse": ""
+    },
+    {
+        "name": "Radio 单选按钮",
+        "dirName": "radio",
+        "description": "用于在一组备选项中进行单选",
+        "whenToUse": ""
+    },
+    {
+        "name": "Card 商品卡片",
+        "dirName": "card",
+        "description": "商品卡片，用于展示商品的图片、价格等信息",
+        "whenToUse": ""
+    },
+    {
+        "name": "Loading 加载中",
+        "dirName": "loading",
+        "description": "加载图标，用于显示正在加载中的状态\n\n### 引入\n\n```tsx\nimport { Loading } from '@nutui/nutui-react-taro'\n```",
+        "whenToUse": ""
+    },
+    {
+        "name": "Indicator 指示器",
+        "dirName": "indicator",
+        "description": "显示一个任务或流程的进度，常用于开通流程。",
+        "whenToUse": ""
+    },
+    {
+        "name": "ResultPage组件",
+        "dirName": "resultpage",
+        "description": "",
+        "whenToUse": ""
+    },
+    {
+        "name": "Empty组件",
+        "dirName": "empty",
+        "description": "空状态时的占位提示",
+        "whenToUse": ""
+    },
+    {
+        "name": "Progress 进度条",
+        "dirName": "progress",
+        "description": "展示操作或任务的当前进度。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Picker 选择器",
+        "dirName": "picker",
+        "description": "提供多个选项集合供用户选择其中一项。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Signature 签名",
+        "dirName": "signature",
+        "description": "基于 Canvas 的签名组件",
+        "whenToUse": ""
+    },
+    {
+        "name": "CountDown 倒计时",
+        "dirName": "countdown",
+        "description": "用于实时展示倒计时数值，支持毫秒精度。",
+        "whenToUse": ""
+    },
+    {
+        "name": "SafeArea 安全区",
+        "dirName": "safearea",
+        "description": "在全面屏下提供自适应的边距调整。当网页被全屏展示时，可借助安全区实现自动适配。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Sticky 组件",
+        "dirName": "sticky",
+        "description": "效果同 css 中的 position: sticky,对低端浏览器可使用其做兼容\n\n> 支持吸顶、吸底、容器内吸顶效果，也可以使用官方[sticky组件](https://developers.weixin.qq.com/miniprogram/dev/platform-capabilities/extended/component-plus/sticky.html)",
+        "whenToUse": ""
+    },
+    {
+        "name": "Input 输入框",
+        "dirName": "input",
+        "description": "用户可以在文本框里输入内容。",
+        "whenToUse": ""
+    },
+    {
+        "name": "ImagePreview组件",
+        "dirName": "imagepreview",
+        "description": "支持全屏预览视频和图片，可函数式调用",
+        "whenToUse": ""
+    },
+    {
+        "name": "Skeleton 骨架屏组件",
+        "dirName": "skeleton",
+        "description": "在页面上待加载区域填充灰色的占位图，本质上是界面加载过程中的过渡效果。",
+        "whenToUse": ""
+    },
+    {
+        "name": "PickerView 选择器视图",
+        "dirName": "pickerview",
+        "description": "PickerView 是 Picker 的内容区域。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Layout 布局",
+        "dirName": "layout",
+        "description": "用于快速进行布局",
+        "whenToUse": ""
+    },
+    {
+        "name": "Segmented 组件",
+        "dirName": "segmented",
+        "description": "用于带页面类型区分的内容型卡片切换，如主图视频、图文切换。",
+        "whenToUse": ""
+    },
+    {
+        "name": "DatePicker 日期选择器",
+        "dirName": "datepicker",
+        "description": "时间选择器，支持日期、年月、时分等维度，通常与弹出层组件配合使用。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Toast 吐司",
+        "dirName": "toast",
+        "description": "用于轻提示。\n\n> 当前组件 Taro 环境暂不支持函数式调用，推荐使用 Taro.API 使用原生组件 https://taro-docs.jd.com/taro/docs/apis/ui/interaction/showToast",
+        "whenToUse": ""
+    },
+    {
+        "name": "Cascader 级联选择",
+        "dirName": "cascader",
+        "description": "级联选择器，用于多层级数据的选择，典型场景为省市区选择。",
+        "whenToUse": ""
+    },
+    {
+        "name": "TrendArrow 指标趋势",
+        "dirName": "trendarrow",
+        "description": "带有箭头指示的百分比数字,用以展示指标趋势",
+        "whenToUse": ""
+    },
+    {
+        "name": "Checkbox 复选按钮",
+        "dirName": "checkbox",
+        "description": "多选按钮用于选择。",
+        "whenToUse": ""
+    },
+    {
+        "name": "快速上手",
+        "dirName": "start",
+        "description": "",
+        "whenToUse": ""
+    },
+    {
+        "name": "Tabbar 标签栏",
+        "dirName": "tabbar",
+        "description": "底部导航常用场景",
+        "whenToUse": ""
+    },
+    {
+        "name": "Swipe组件",
+        "dirName": "swipe",
+        "description": "常用于单元格左右滑删除等手势操作",
+        "whenToUse": ""
+    },
+    {
+        "name": "VirtualList 虚拟列表",
+        "dirName": "virtuallist",
+        "description": "在正常的列表展示以及上拉加载中，我们通常使用 NutUI-React 提供的 滚动加载 组件，那如果我们加载的数据量非常大时，则可能会产生严重的性能问题，导致视图无法响应操作一段时间，这时候我们就用到了虚拟列表组件 VirtualList，它可以保证只渲染当前可视区域，其他部分在用户滚动到可视区域内之后再渲染。保证了页面流程度，提升性能。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Collapse 折叠面板",
+        "dirName": "collapse",
+        "description": "将内容放置在多个折叠面板中，点击面板标题可展开或收缩内容。",
+        "whenToUse": ""
+    },
+    {
+        "name": "InputNumber 数字输入框",
+        "dirName": "inputnumber",
+        "description": "通过点击按钮控制数字增减。",
+        "whenToUse": ""
+    },
+    {
+        "name": "InfiniteLoading 滚动加载",
+        "dirName": "infiniteloading",
+        "description": "列表滚动到底部自动加载更多数据。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Barrage 弹幕",
+        "dirName": "barrage",
+        "description": "用于话语和词组的轮播展示，适用于视频中或其他类似需求中。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Drag 拖拽",
+        "dirName": "drag",
+        "description": "实现可拖拽的任意元素",
+        "whenToUse": ""
+    },
+    {
+        "name": "AvatarCropper 头像裁剪",
+        "dirName": "avatarcropper",
+        "description": "用来对头像进行裁剪生成一张新的图片。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Image 图片",
+        "dirName": "image",
+        "description": "增强版的 img 标签，提供多种图片填充模式，支持图片加载中提示、加载失败提示。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Dialog 对话框",
+        "dirName": "dialog",
+        "description": "模态对话框，在浮层中显示，引导用户进行相关操作，常用于消息提示、消息确认，或在当前页面内完成特定的交互操作。\n\n弹出框组件支持函数调用和组件调用两种方式。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Popover 气泡弹出框",
+        "dirName": "popover",
+        "description": "点击或在元素上悬停鼠标，弹出气泡卡片浮层。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Cell 单元格",
+        "dirName": "cell",
+        "description": "列表项，可组成列表。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Watermark 水印",
+        "dirName": "watermark",
+        "description": "页面上添加特定的文字或图案，可用于防止信息盗用。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Audio 音频播放器",
+        "dirName": "audio",
+        "description": "用于音频播放。**Taro 端不再暴露该组件，建议使用能力更强的 Taro.createInnerAudioContext 接口。**\n\n请参考：https://docs.taro.zone/docs/components/media/audio\n\n> 以下使用方式，**已不支持**。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Price 价格",
+        "dirName": "price",
+        "description": "用来对商品价格数值的小数点前后部分应用不同样式，还支持人民币符号、千位分隔符、设置小数点位数等功能。",
+        "whenToUse": ""
+    },
+    {
+        "name": "TextArea 文本域",
+        "dirName": "textarea",
+        "description": "文本框内输入或编辑文字，支持限制输入数量。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Button 按钮",
+        "dirName": "button",
+        "description": "按钮用于触发一个操作，如提交表单。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Steps 步骤条",
+        "dirName": "steps",
+        "description": "拆分展示某项流程的步骤，引导用户按流程完成任务或向用户展示当前状态。",
+        "whenToUse": ""
+    },
+    {
+        "name": "主题定制",
+        "dirName": "theme",
+        "description": "",
+        "whenToUse": ""
+    },
+    {
+        "name": "Table组件",
+        "dirName": "table",
+        "description": "用于展示基础表格",
+        "whenToUse": ""
+    },
+    {
+        "name": "Divider 分割线",
+        "dirName": "divider",
+        "description": "用于将内容分隔为多个区域。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Address 地址",
+        "dirName": "address",
+        "description": "地址选择",
+        "whenToUse": ""
+    },
+    {
+        "name": "Menu 菜单",
+        "dirName": "menu",
+        "description": "向下弹出的菜单列表",
+        "whenToUse": ""
+    },
+    {
+        "name": "Avatar 头像",
+        "dirName": "avatar",
+        "description": "用来代表用户或事物，支持图片、图标或字符展示。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Switch 开关",
+        "dirName": "switch",
+        "description": "用来打开或关闭选项。",
+        "whenToUse": ""
+    },
+    {
+        "name": "SideNavBar组件",
+        "dirName": "sidenavbar",
+        "description": "> **⚠️ 注意：** 该组件即将被废弃。请使用 [SideBar](#/zh-CN/component/sidebar) 代替。\n> 用于内容选择和切换",
+        "whenToUse": ""
+    },
+    {
+        "name": "Tour 引导",
+        "dirName": "tour",
+        "description": "#\n\n用于引导用户了解产品功能的气泡组件。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Lottie 动画",
+        "dirName": "lottie",
+        "description": "加载 lottie 动画\n\n### 引入\n\n```tsx\nimport { Lottie } from '@nutui/nutui-react-taro'\n```",
+        "whenToUse": ""
+    },
+    {
+        "name": "AnimatingNumbers 数字动画",
+        "dirName": "animatingnumbers",
+        "description": "数字动画集合",
+        "whenToUse": ""
+    },
+    {
+        "name": "HoverButton",
+        "dirName": "hoverbutton",
+        "description": "",
+        "whenToUse": ""
+    },
+    {
+        "name": "Icon 图标",
+        "dirName": "icon",
+        "description": "独立安装 @nutui/icons-react-taro 图标组件包。基于字体的图标集。",
+        "whenToUse": ""
+    },
+    {
+        "name": "CalendarCard 日历",
+        "dirName": "calendarcard",
+        "description": "日历",
+        "whenToUse": ""
+    },
+    {
+        "name": "Range 区间选择器",
+        "dirName": "range",
+        "description": "滑动输入条，用于在给定的范围内选择一个值。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Space组件",
+        "dirName": "space",
+        "description": "#\n\n元素排列中保持相同的宽度。\n\n### 引入\n\n```tsx\nimport { Space } from '@nutui/nutui-react-taro'\n```",
+        "whenToUse": ""
+    },
+    {
+        "name": "Overlay 遮罩层",
+        "dirName": "overlay",
+        "description": "创建一个遮罩层，通常用于阻止用户进行其他操作",
+        "whenToUse": ""
+    },
+    {
+        "name": "官方主题",
+        "dirName": "officialtheme",
+        "description": "",
+        "whenToUse": ""
+    },
+    {
+        "name": "Elevator 电梯楼层",
+        "dirName": "elevator",
+        "description": "用于列表快速定位以及索引的显示",
+        "whenToUse": ""
+    },
+    {
+        "name": "Ellipsis组件",
+        "dirName": "ellipsis",
+        "description": "展示空间不足时，隐去部分内容并用“...”替代。",
+        "whenToUse": ""
+    },
+    {
+        "name": "DatePickerView 日期选择器视图",
+        "dirName": "datepickerview",
+        "description": "时间选择器，支持日期、年月、时分等维度。",
+        "whenToUse": ""
+    },
+    {
+        "name": "TimeSelect 配送时间",
+        "dirName": "timeselect",
+        "description": "用于配送时间选择",
+        "whenToUse": ""
+    },
+    {
+        "name": "Tag 标签",
+        "dirName": "tag",
+        "description": "用于标记和分类的标签。",
+        "whenToUse": ""
+    },
+    {
+        "name": "FixedNav 悬浮导航",
+        "dirName": "fixednav",
+        "description": "悬浮收齐体验交互，用于快捷导航",
+        "whenToUse": ""
+    },
+    {
+        "name": "PullToRefresh 下拉刷新",
+        "dirName": "pulltorefresh",
+        "description": "在列表中通过手指下拉刷新加载新内容的交互操作。",
+        "whenToUse": ""
+    },
+    {
+        "name": "NumberKeyboard 数字键盘",
+        "dirName": "numberkeyboard",
+        "description": "虚拟数字键盘，用于输入支付密码的场景。",
+        "whenToUse": ""
+    },
+    {
+        "name": "国际化",
+        "dirName": "international",
+        "description": "NutUI-React 1.0 以上版本支持多语言。组件默认使用中文。",
+        "whenToUse": ""
+    },
+    {
+        "name": "NoticeBar 公告栏",
+        "dirName": "noticebar",
+        "description": "用于循环播放展示一组消息通知。",
+        "whenToUse": ""
+    },
+    {
+        "name": "BackTop 返回顶部",
+        "dirName": "backtop",
+        "description": "提供较长的页面快捷返回顶部功能。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Grid 宫格",
+        "dirName": "grid",
+        "description": "用于分隔成等宽区块进行页面导航。",
+        "whenToUse": ""
+    },
+    {
+        "name": "Badge 徽标",
+        "dirName": "badge",
+        "description": "出现在图标或文字右上角的红色圆点、数字或者文字，表示有新内容或者待处理的信息。",
+        "whenToUse": ""
+    },
+    {
+        "name": "customizeTheme(customize-theme,theme) 主题定制",
+        "dirName": "theme",
+        "description": "主题定制",
+        "whenToUse": ""
+    },
+    {
+        "name": "officialTheme(official-theme) 官方主题",
+        "dirName": "officialtheme",
+        "description": "官方主题",
+        "whenToUse": ""
+    },
+    {
+        "name": "international 国际化",
+        "dirName": "international",
+        "description": "国际化",
+        "whenToUse": ""
+    },
+    {
+        "name": "start 快速上手",
+        "dirName": "start",
+        "description": "快速上手",
+        "whenToUse": ""
+    }
+]

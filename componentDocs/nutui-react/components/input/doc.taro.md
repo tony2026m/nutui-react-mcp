@@ -1,0 +1,226 @@
+# Input 输入框
+
+用户可以在文本框里输入内容。
+
+## 引入
+
+```tsx
+import { Input } from '@nutui/nutui-react-taro'
+```
+
+## 示例代码
+
+### 基础用法
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /input/demos/taro/demo1.tsx
+	- thumbnail: 
+
+:::
+
+### 非受控
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /input/demos/taro/demo2.tsx
+	- thumbnail: 
+
+:::
+
+### 受控
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /input/demos/taro/demo3.tsx
+	- thumbnail: 
+
+:::
+
+### 自定义类型
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /input/demos/taro/demo4.tsx
+	- thumbnail: 
+
+:::
+
+### 禁用和只读
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /input/demos/taro/demo5.tsx
+	- thumbnail: 
+
+:::
+
+### 显示清除图标
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /input/demos/taro/demo6.tsx
+	- thumbnail: 
+
+:::
+
+### 受控下的清除
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /input/demos/taro/demo7.tsx
+	- thumbnail: 
+
+:::
+
+### 字数统计
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /input/demos/taro/demo8.tsx
+	- thumbnail: 
+
+:::
+
+### 带密码可见
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /input/demos/taro/demo9.tsx
+	- thumbnail: 
+
+:::
+
+### 格式化输入内容
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /input/demos/taro/demo10.tsx
+	- thumbnail: 
+
+:::
+
+### 对齐方式
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /input/demos/taro/demo11.tsx
+	- thumbnail: 
+
+:::
+
+### 事件
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /input/demos/taro/demo12.tsx
+	- thumbnail: 
+
+:::
+
+### 布局
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /input/demos/taro/demo13.tsx
+	- thumbnail: 
+
+:::
+
+### 边框
+
+:::demo
+
+- [外部示例代码]
+	- description: 
+	- src: /input/demos/taro/demo14.tsx
+	- thumbnail: 
+
+:::
+
+## Input
+
+### Props
+
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| defaultValue | 初始默认值 | `string` | `-` |
+| value | 初始默认值 | `string` | `-` |
+| type | 输入框类型，支持原生 `input` 标签的所有 `type` 属性，另外还支持 `number` `digit` | `string` | `text` |
+| plain | 输入框是容器型还是文本型，容器型一般都是带外边框的 | `boolean` | `false` |
+| name | 组件名字，用于表单提交获取数据 | `string` | `-` |
+| placeholder | 输入框为空时占位符 | `string` | `-` |
+| align | 输入框内容对齐方式，可选值 `left`、`center`、`right` | `string` | `left` |
+| disabled | 是否禁用 | `boolean` | `false` |
+| readOnly | 是否只读 | `boolean` | `false` |
+| autoFocus | 是否自动获得焦点，iOS 系统不支持该属性 | `boolean` | `false` |
+| maxLength | 限制最长输入字符 | `string` \| `number` | `-` |
+| clearable | 展示清除 Icon | `boolean` | `false` |
+| clearIcon | 清除图标 Icon <a href="#/icon">可参考 Icon </a> | `ReactNode` | `MaskClose` |
+| confirmType | 键盘右下角按钮的文字，仅在type='text'时生效,可选值 send：发送、search：搜索、next：下一个、go：前往、done：完成 | `string` | `done` |
+| formatter | 输入内容格式化函数 | `(val: string) => string` | `-` |
+| formatTrigger | 格式化函数触发的时机，可选值为 `onChange`、`onBlur` | `string` | `-` |
+| onChange | 输入框内容变化时触发 | `(value: string) => void` | `-` |
+| onBlur | 失去焦点后触发 | `(value: string) => void` | `-` |
+| onFocus | 获得焦点后触发 | `(value: string) => void` | `-` |
+| onClear | 点击清空按钮时触发 | `(value: string) => void` | `-` |
+| onClick | 点击 input 容器触发 | `(value: MouseEvent<HTMLDivElement>) => void` | `-` |
+
+此外还支持 Taro 中的 [Input 属性](https://docs.taro.zone/docs/components/forms/input/)
+
+### Ref
+
+通过 ref 可以获取到 Input 实例并调用实例方法。
+
+| 方法名 | 说明 | 参数 |
+| --- | --- | --- |
+| clear | 清除容器中的数据 | `-` |
+| focus | 使容器获取焦点 | `-` |
+| blur | 使容器失去焦点 | `-` |
+| nativeElement | 获取当前容器 | `-` |
+
+## 主题定制
+
+### 样式变量
+
+组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](#/zh-CN/component/configprovider)。
+
+| 名称 | 说明 | 默认值 |
+| --- | --- | --- |
+| \--nutui-input-border-bottom | 边框颜色 | `#eaf0fb` |
+| \--nutui-input-border-bottom-width | 边框宽度 | `0px` |
+| \--nutui-input-color | 文本颜色 | `$color-title` |
+| \--nutui-input-disabled-color | 禁用的文本颜色 | `#c8c9cc` |
+| \--nutui-input-background-color | 输入框背景颜色 | `$color-background-overlay` |
+| \--nutui-input-border-radius | 输入框圆角 | `0` |
+| \--nutui-input-font-size | 文本字号 | `$font-size-base` |
+| \--nutui-input-lineheight | 行高 | `$font-size-l` |
+| \--nutui-input-padding | 输入框容器的内边距 | `10px 25px` |
+
+<Contribution name="Input" />
